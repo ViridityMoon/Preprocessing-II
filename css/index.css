@@ -232,7 +232,11 @@ img {
   }
 }
 .header {
-  border-bottom: 2px dashed #C0C0C0;
+  width: 100%;
+}
+.header .border {
+  border: bottom 2px dashed #C0C0C0;
+  width: 130%;
 }
 .header div {
   margin-bottom: 2%;
@@ -265,10 +269,20 @@ img {
 @media (max-width:500px) {
   .home .content-section .img-content {
     width: 100%;
+    display: flex;
+    flex-direction: auto;
+    justify-content: center;
+    align-items: center;
   }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content img {
+    width: 95%;
+    border-radius: auto;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;

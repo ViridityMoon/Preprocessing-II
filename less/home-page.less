@@ -1,5 +1,10 @@
 .header{
-  border-bottom: 2px dashed @silver;
+  width:100%;
+
+  .border{
+    border: bottom 2px dashed @silver;
+    width:130%;
+  }
   div{
     margin-bottom:2%;
     
@@ -24,6 +29,7 @@
       padding-right: 1%;
       @media @mobile{
         width:100%;
+
       }
     }
 
@@ -32,10 +38,17 @@
       padding-left: 1%;
       @media @mobile{
         width:100%;
+        .flex(auto, center, center);
+        
       }
 
       img {
         border-radius: 10px;
+        @media @mobile{
+          width:95%;
+          border-radius: auto;
+
+        }
       }
     }
   }
