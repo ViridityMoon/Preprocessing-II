@@ -1,7 +1,36 @@
 // Navigation Styles here
 
 .header{
+    
+    border-bottom: 2px dashed @silver;
     header{
         .flex(row, space-between, auto);
+        margin: 5% 0% 2% 0%;
+        @media @mobile{
+            .flex(column, center, center);
+        }
+        
+    }
+}
+
+.header nav{
+    @media @mobile{
+        width:100%;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+    }
+    width:40%;
+    font-weight: bold;
+    .flex(row, center, center);
+    
+}
+
+.header a{
+    margin: 0% 5% 0% 3%;
+    text-decoration: none;
+    color: @shark;
+    font-size:1.7rem;
+    &:hover{
+        color: lighten(@shark, 30%)
     }
 }
