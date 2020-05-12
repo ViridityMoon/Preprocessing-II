@@ -278,3 +278,12 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.destination .btn {
+  background-color: #17A2B8;
+  width: 80%;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 6%;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
